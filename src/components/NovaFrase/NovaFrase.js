@@ -1,8 +1,12 @@
 import React from 'react'
 
 function NovaFrase(){
+    function changePhrase(){
+        console.log('Trocar a frase')
+    }
+
     return (
-        <button>Gerar nova frase</button>
+        <button onClick={changePhrase}>Já usou essa? Tente outra!</button>
     )
 }
 
