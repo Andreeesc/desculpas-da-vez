@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Frase(){ 
     let frases = [
@@ -74,7 +74,19 @@ function Frase(){
 
     let fraseRandom = frases[Math.floor(Math.random() * frases.length)].frase
 
-    return <p>{fraseRandom}</p>
+    const [phrase, setPhrase] = useState(fraseRandom)
+
+    function changePhrase(){
+        setPhrase(fraseRandom)
+    }
+
+    return (
+        <div>
+            <p>{phrase}</p>
+            <button onClick={changePhrase}>Já usou essa? Tente outra!</button>
+        </div>
+        
+    )
 }
 
 export default Frase

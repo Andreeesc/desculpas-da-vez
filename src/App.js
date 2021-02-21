@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Frase from './components/Frase/Frase'
-import NovaFrase from './components/NovaFrase/NovaFrase'
+// import NovaFrase from './components/NovaFrase/NovaFrase'
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>Desculpas da Vez</h1>
       <Frase />
-      <NovaFrase />
+      {/* <NovaFrase /> */}
     </div>
   );
 }
