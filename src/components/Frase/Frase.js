@@ -72,7 +72,7 @@ function Frase(){
         },
     ]
 
-    let fraseRandom = frases[Math.floor(Math.random() * frases.length)].frase
+    const fraseRandom = () => frases[Math.floor(Math.random() * frases.length)].frase
 
     const [phrase, setPhrase] = useState(fraseRandom)
 
